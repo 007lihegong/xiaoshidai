@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "195ac7cb-38e2-4929-a37b-d10833e50d07++9294",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "195ac7cb-38e2-4929-a37b-d10833e50d07++9294" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "195ac7cb-38e2-4929-a37b-d10833e50d07++9294" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C35AD6A7-B424-46D1-AAE5-4FC30A9E8026",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "195ac7cb-38e2-4929-a37b-d10833e50d07++9294" : "%E5%B0%8F%E6%97%B6%E8%B4%B7%E9%87%91%E8%9E%8D%E8%B6%85%E5%B8%82\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "xiaoshidai",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "客户端\/ios\/code\/小时贷1.0.1\/xiaoshidai\/xiaoshidai.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/192.168.1.188\/product",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "195ac7cb-38e2-4929-a37b-d10833e50d07++9294"
+    }
+  ]
+}

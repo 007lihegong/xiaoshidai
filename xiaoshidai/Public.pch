@@ -1,0 +1,230 @@
+//
+//  Public.pch
+//  网众
+//
+//  Created by 赵明 on 15/6/15.
+//  Copyright (c) 2015年 ZM. All rights reserved.
+//
+
+#ifndef ___Public_pch
+#define ___Public_pch
+//添加了.c 文件
+#ifdef __OBJC__
+#import "pinyin.h"
+#import <UIKit/UIKit.h>
+//#import "EScrollerView.h"
+#import "UIColor+Hex.h"
+#import "MJExtension.h"
+#import "Common.h"
+#import "Masonry.h"
+#import "UIImageView+WebCache.h"
+#import "AFNetworking.h"
+#import "MJRefresh.h"
+#import <JavaScriptCore/JavaScriptCore.h>
+#import "MyControl.h"
+#import "IQKeyboardManager.h"
+#import "UIView+Extension.h"
+#import "CommonMacro.h"
+#import "UITextField+MyTextField.h"
+#import "BaseVC.h"
+#import "XYString.h"
+#import "LCProgressHUD.h"
+#import "Defines.h"
+#import "UIView+XBExtension.h"
+#import "LJKDatePicker.h"
+#import "SCNavTabBarController.h"
+#import "XYString.h"
+#import "QBImagePickerController.h"
+#import "Bugly/Bugly.h"
+#import "UIView+Toast.h"
+#import <RongIMKit/RongIMKit.h>
+#import "UMMobClick/MobClick.h"
+#import "BaseRequest.h"
+#import "RSA.h"
+#import "Md5_f.h"
+__attribute__((annotate("returns_localized_nsstring")))
+static inline NSString *LocalizationNotNeeded(NSString *s) {
+    return s;
+}
+#endif
+
+
+#define ReceiveJSON @"json"
+//接口定义
+//获取部门信息
+#define Dispatch @"/sysset/dispatchdep/"
+//获取二级地区信息
+#define Area @"/sysset/area2/"
+//新增订单
+#define AddOrder @"/order/newrec/"
+//修改订单
+#define ModifyOrder @"/order/modifyrec/"
+//获取概况信息
+#define CollectSup @"/report/collect/"
+//获取趋势信息
+#define TrendSup @"/report/trend/"
+//获取报表运营分部
+#define DepOp @"/sysset/depop/"
+//获取报表门店
+#define DepSt @"/sysset/depst/"
+//获取后台分部
+#define DepBk @"/sysset/depbk/"
+//获取指定部门下的直属
+#define DepeMp @"/sysset/depemp/"
+//获取服务费信息
+#define SerFee @"/report/servicefee/"
+//放款额
+#define LoanE @"/report/loan/"
+//进件量
+#define Enter @"/report/enter/"
+//成单量
+#define Deal @"/report/deal/"
+//成单率
+#define Dealrate @"/report/dealrate/"
+//渠道发放
+#define ChannelProduct @"/report/channelproduct/"
+//客户来源
+#define ClientSource @"/report/clientsource/"
+//数字统计
+#define RedNum @"/order/rednum/"
+//RCIM
+//获取通讯录
+#define MyAddBook @"/im/addressbook/"
+//获取所在的群组
+#define MYGROUP @"/im/mygroup/"
+//创建群组
+#define CREATGROUP @"/im/creategroup/"
+//同步群组
+#define SYNCGROUP @"/im/syncgroup/"
+//群组信息
+#define GROUPINFO @"/im/groupinfo/"
+//退群
+#define QUITGROUP @"/im/quitgroup/"
+//踢人出群
+#define DELMEMBER @"/im/delmember/"
+//拉人入群
+#define ADDMEMBER @"/im/addmember/"
+//解散群
+#define DISMISSGROUP @"/im/dismissgroup/"
+//产品查询
+#define PROSEARCH @"/product/search/"
+//产品详情
+#define PRODETAIL @"/product/detail/"
+//上传图片
+#define UPIMG @"/sysset/upimg/"
+//新增实名认证
+#define NEWREC @"/realname/newrec/"
+//实名认证 修改
+#define REALNAME_MODIFY @"/realname/modifyrec/"
+//待收款项 查询（列表）
+#define RECEIPTSEARCH @"/receipt/search/"
+//绑定银行卡 查询
+#define BINDCARD_SEARCH @"/bindcard/search/"
+//绑定银行卡 明细
+#define BINDCARD_DETAIL @"/bindcard/detail/"
+//绑定银行卡 解绑
+#define BINDCARD_UNBIND @"/bindcard/debind/"
+//获取 连连支付的银行
+#define BANKINFO @"/sysset/bankinfolian/"
+//绑定银行卡 新增
+#define BIND_BEWREC @"/bindcard/newrec/"
+//获取 指定员工实名认证状态
+#define SYSSET_REALNAME_STATUS @"/sysset/realnamestatus/"
+//获取 指定员工实名认证信息
+#define SYSSET_REALNAME_INFO @"/sysset/realnameinfo/"
+//编辑金额
+#define RECEIPT_MODIFY_REC @"/receipt/modifyrec/"
+//线下支付
+#define RECEIPT_OFFLINE_PAY @"/receipt/offlinepay/"
+
+//快捷支付接口 支付参数处理&签名生成
+#define LIANLIAN_PAY_PRE @"/lianpay/prepay/"
+//支付后写入支付记录到服务端
+#define LIANLIAN_PAY_SYN @"/lianpay/synflow/"
+//获取 产品订单的产品类型
+#define SYS_XORDER_TYPE @"/sysset/xordertype/"
+//产品订单  新增
+#define XORDER_NEWREC @"/xorder/newrec/"
+
+
+
+
+
+#define StrFormatTh(r, g ,b) [NSString stringWithFormat:@"%@%@%@",(r),(g),(b)]
+#define StrFormatTW(r, g ) [NSString stringWithFormat:@"%@%@",(r),(g)]
+
+
+
+#define USER_DEFAULT   [NSUserDefaults standardUserDefaults]
+#define TITLEHEIGHT 44
+// RGB颜色
+// This code will only compile on versions <= iOS 10.0
+
+#define RGBColor(r, g, b) [UIColor DisplayP3Red:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define UIColorFromRGB(rgbValue)    [UIColor DisplayP3Red:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+#define UIColorWithRGBA(r,g,b,a)        [UIColor DisplayP3Red:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+#define color(r,g,b,p) [UIColor DisplayP3Red:r/255.0 green:g/255.0 blue:b/255.0 alpha:p]
+//十六进制色值+透明度
+#define colorValue(rgbValue,transparentValue) [UIColor \
+DisplayP3Red:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0xFF))/255.0 alpha:transparentValue]
+
+
+//字体
+#define font_Bold @"TrebuchetMS-Bold"
+#define font_Size [UIFont fontWithName:@"TrebuchetMS-Bold" size:13]
+
+#define BackgroudColor @"#F6F6F6"
+#define promptColor @"#888888"
+#define MyGrayColor UIColorFromRGB(0xd2d2d2)
+#define CellHeight 90
+#define Border 10
+#define iOS7 ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0)
+#define TINTCOLOR  UIColorFromRGB(0x18c5da)
+#define IMGNAME(name) [UIImage imageNamed:name]
+#define GoodsNameColor UIColorFromRGB(0x222222)
+#define GoodsNameFont [UIFont systemFontOfSize:13]
+
+#define GoodsPriceColor UIColorFromRGB(0xfc0000)
+#define GoodsPriceFont [UIFont systemFontOfSize:16]
+
+#define MyBlueColor UIColorFromRGB(0x2196f3)
+
+#define Window [UIApplication sharedApplication].keyWindow
+#define CenterPoint [NSValue valueWithCGPoint:[UIApplication sharedApplication].keyWindow.center]
+
+//数据库地址
+#define PATH [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"data.sqlite"]
+
+#define kScreen_Height [UIScreen mainScreen].bounds.size.height
+#define kScreen_Width [UIScreen mainScreen].bounds.size.width
+
+
+
+#define iPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) : NO)
+
+
+//判断iphone6+
+
+#define iPhone6Plus ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size) : NO)
+
+//判断
+#define equipmentSize ([[UIScreen mainScreen] currentMode].size)
+#define iPhone4s ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define iPhone5s ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define IOS7LATER ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
+
+#define IOS8LATER ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
+#define IOS10_2LATER ([[[UIDevice currentDevice] systemVersion] floatValue] > 10.1)
+
+#define IMAGE_WITH_NAME(imageName) [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForAuxiliaryExecutable:imageName]]
+//5589736f67e58e2577001b71
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif
